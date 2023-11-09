@@ -6,7 +6,7 @@
 /*   By: yboutsli <yboutsli@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/04 22:18:52 by yboutsli          #+#    #+#             */
-/*   Updated: 2023/11/09 20:22:33 by yboutsli         ###   ########.fr       */
+/*   Updated: 2023/11/09 20:38:34 by yboutsli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 		return (NULL);
 	i = 0;
 	len_s = ft_strlen(s);
-	p = (char *) malloc ((len_s + 1) * (sizeof(char) + 1));
+	p = (char *) malloc ((len_s + 1) * sizeof(char));
 	if (!p)
 		return (NULL);
 	while (i < len_s)
