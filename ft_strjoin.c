@@ -6,19 +6,19 @@
 /*   By: yboutsli <yboutsli@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/02 12:26:39 by yboutsli          #+#    #+#             */
-/*   Updated: 2023/11/03 18:43:52 by yboutsli         ###   ########.fr       */
+/*   Updated: 2023/11/09 20:14:08 by yboutsli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char *ft_strjoin(char const *s1, char const *s2)
+char	*ft_strjoin(char const *s1, char const *s2)
 {
-	size_t len_s1;
-	size_t len_s2;
-	char *p;
-	size_t i;
-	size_t j;
+	size_t	len_s1;
+	size_t	len_s2;
+	char	*p;
+	size_t	i;
+	size_t	j;
 
 	i = 0;
 	j = 0;

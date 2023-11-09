@@ -6,17 +6,17 @@
 /*   By: yboutsli <yboutsli@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/02 11:49:28 by yboutsli          #+#    #+#             */
-/*   Updated: 2023/11/09 19:48:30 by yboutsli         ###   ########.fr       */
+/*   Updated: 2023/11/09 20:14:43 by yboutsli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char *ft_strdup(const char *s1)
-{	
-	size_t len_s;
-	size_t i;
-	char *p;
+char	*ft_strdup(const char *s1)
+{
+	size_t	len_s;
+	size_t	i;
+	char	*p;
 
 	i = 0;
 	len_s = ft_strlen(s1);

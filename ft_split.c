@@ -6,7 +6,7 @@
 /*   By: yboutsli <yboutsli@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/03 19:22:06 by yboutsli          #+#    #+#             */
-/*   Updated: 2023/11/04 21:38:56 by yboutsli         ###   ########.fr       */
+/*   Updated: 2023/11/09 20:17:00 by yboutsli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -94,10 +94,7 @@ char	**ft_split(char const *s, char c)
 		if (!p[i])
 		{
 			while (i > 0)
-			{
-				free(p + i);
-				i--;
-			}
+				free(p[--i]);
 			free (p);
 			return (NULL);
 		}
