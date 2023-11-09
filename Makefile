@@ -3,7 +3,7 @@ SRCF = ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c ft_strle
 	   ft_striteri.c ft_putchar_fd.c ft_putstr_fd.c ft_putendl_fd.c ft_putnbr_fd.c
 
 
-SRCS_B = ft_lstnew.c ft_lstadd_front.c ft_lstsize.c ft_lstlast.c
+SRCS_B = ft_lstnew.c ft_lstadd_front.c ft_lstsize.c ft_lstlast.c ft_lstadd_back.c
 
 OBJF = $(SRCF:.c=.o)
 OBJFB = $(SRCS_B:.c=.o)
@@ -12,13 +12,12 @@ NAME = libft.a
 RM = rm -f
 %.o:%.c
 	gcc $(CFLAGS) -c $^ -o $@
-bonus: $(OBJFB)
-	ar -rc $(NAME) $(OBJFB)
 all: $(NAME)
 
 $(NAME): $(OBJF)
-	ar -rc $(NAME) $(OBJF) 
-
+	ar -rc $(NAME) $(OBJF)
+bonus: $(OBJFB)
+	ar -rc $(NAME) $(OBJFB)
 clean:
 	$(RM) $(OBJF) $(OBJFB)
 

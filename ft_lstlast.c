@@ -6,7 +6,7 @@
 /*   By: yboutsli <yboutsli@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/08 20:56:48 by yboutsli          #+#    #+#             */
-/*   Updated: 2023/11/08 21:03:20 by yboutsli         ###   ########.fr       */
+/*   Updated: 2023/11/09 20:50:02 by yboutsli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 t_list	*ft_lstlast(t_list *lst)
 {
-	t_list *p;
+	t_list	*p;
 
 	if (!lst)
 		return (NULL);
