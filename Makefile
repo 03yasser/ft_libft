@@ -10,7 +10,8 @@ OBJFB = $(SRCS_B:.c=.o)
 CFLAGS = -Wall -Wextra -Werror
 NAME = libft.a
 RM = rm -f
-
+%.o:%.c
+	gcc $(CFLAGS) -c $^ -o $@
 bonus: $(OBJFB)
 	ar -rc $(NAME) $(OBJFB)
 all: $(NAME)

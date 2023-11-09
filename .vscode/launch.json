@@ -6,8 +6,8 @@
       "type": "lldb",
       "request": "launch",
       "args": [],
-      "cwd": "/Users/yboutsli/Desktop/libft2",
-      "program": "/Users/yboutsli/Desktop/libft2/build/Debug/outDebug"
+      "cwd": "/Users/yboutsli/Desktop/libft",
+      "program": "/Users/yboutsli/Desktop/libft/build/Debug/outDebug"
     }
   ]
 }

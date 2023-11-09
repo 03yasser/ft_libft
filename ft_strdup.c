@@ -6,7 +6,7 @@
 /*   By: yboutsli <yboutsli@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/02 11:49:28 by yboutsli          #+#    #+#             */
-/*   Updated: 2023/11/02 12:02:44 by yboutsli         ###   ########.fr       */
+/*   Updated: 2023/11/09 19:48:30 by yboutsli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ char *ft_strdup(const char *s1)
 	char *p;
 
 	i = 0;
-	len_s = strlen(s1);
+	len_s = ft_strlen(s1);
 	p = (char *) malloc (sizeof(char) * (len_s + 1));
 	if (!s1 || !p) 
 		return (NULL);

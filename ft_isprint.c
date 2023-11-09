@@ -6,15 +6,16 @@
 /*   By: yboutsli <yboutsli@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/31 18:13:56 by yboutsli          #+#    #+#             */
-/*   Updated: 2023/11/03 21:52:10 by yboutsli         ###   ########.fr       */
+/*   Updated: 2023/11/07 21:38:42 by yboutsli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_isprint(int c)
+int	ft_isprint(int c)
 {
-    if (c >= 32 && c <= 127)
-        return (1);
-    else return (0);
+	if (c >= ' ' && c <= '~')
+		return (1);
+	else
+		return (0);
 }

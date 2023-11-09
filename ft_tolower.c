@@ -6,16 +6,18 @@
 /*   By: yboutsli <yboutsli@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/01 15:43:28 by yboutsli          #+#    #+#             */
-/*   Updated: 2023/11/01 16:39:20 by yboutsli         ###   ########.fr       */
+/*   Updated: 2023/11/07 18:49:12 by yboutsli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_tolower(int c)
+int	ft_tolower(int c)
 {
-    c = (unsigned char)c;
-    if (c >= 'A' && c <= 'Z')
-        return (c + 32);
-    return (c);
+	if (c == EOF)
+		return (-1);
+	c = (unsigned char)c;
+	if (c >= 'A' && c <= 'Z')
+		return (c + 32);
+	return (c);
 }

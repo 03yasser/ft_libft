@@ -6,25 +6,23 @@
 /*   By: yboutsli <yboutsli@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/01 18:29:41 by yboutsli          #+#    #+#             */
-/*   Updated: 2023/11/02 12:04:26 by yboutsli         ###   ########.fr       */
+/*   Updated: 2023/11/07 21:34:20 by yboutsli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		ft_atoi(const char *str)
+int	ft_atoi(const char *str)
 {
-	int signe;
-	int i;
-	int n;
+	int	signe;
+	int	i;
+	int	n;
 
 	i = 0;
 	signe = 1;
 	n = 0;
-	if (!str)
-		return (NULL);
 	while (str[i] == ' ' || str[i] == '\n' || str[i] == '\t' || str[i] == '\v'
-			|| str[i] == '\f' || str[i] == '\r')
+		|| str[i] == '\f' || str[i] == '\r')
 		i++;
 	if (str[i] == '-' || str[i] == '+')
 	{
