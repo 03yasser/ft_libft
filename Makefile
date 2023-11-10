@@ -14,7 +14,7 @@ RM = rm -f
 	gcc $(CFLAGS) -c $^ -o $@
 all: $(NAME)
 
-$(NAME): $(OBJF)
+$(NAME): $(OBJF) libft.h
 	ar -rc $(NAME) $(OBJF)
 bonus: $(OBJFB)
 	ar -rc $(NAME) $(OBJFB)
