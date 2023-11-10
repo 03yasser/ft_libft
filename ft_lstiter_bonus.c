@@ -6,7 +6,7 @@
 /*   By: yboutsli <yboutsli@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/10 15:08:23 by yboutsli          #+#    #+#             */
-/*   Updated: 2023/11/10 15:24:51 by yboutsli         ###   ########.fr       */
+/*   Updated: 2023/11/10 16:35:20 by yboutsli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	ft_lstiter(t_list *lst, void (*f)(void *))
 {
-	t_list *p;
+	t_list	*p;
 
 	if (!lst || !f)
 		return ;

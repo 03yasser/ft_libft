@@ -6,7 +6,7 @@
 /*   By: yboutsli <yboutsli@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/08 20:52:48 by yboutsli          #+#    #+#             */
-/*   Updated: 2023/11/10 14:17:32 by yboutsli         ###   ########.fr       */
+/*   Updated: 2023/11/10 16:34:36 by yboutsli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 int	ft_lstsize(t_list *lst)
 {
 	int	count;
-    
+
 	count = 0;
 	if (lst == NULL)
 		return (0);
@@ -24,5 +24,5 @@ int	ft_lstsize(t_list *lst)
 		lst = lst ->next;
 		count++;
 	}
-	return (count);    
+	return (count);
 }

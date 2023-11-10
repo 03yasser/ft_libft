@@ -6,7 +6,7 @@
 /*   By: yboutsli <yboutsli@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/09 22:27:21 by yboutsli          #+#    #+#             */
-/*   Updated: 2023/11/10 15:50:40 by yboutsli         ###   ########.fr       */
+/*   Updated: 2023/11/10 16:35:28 by yboutsli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 void	ft_lstclear(t_list **lst, void (*del)(void *))
 {
 	t_list	*p;
-	t_list *next;
+	t_list	*next;
 
 	if (!lst || !del)
 		return ;
