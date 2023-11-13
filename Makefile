@@ -11,7 +11,7 @@ CFLAGS = -Wall -Wextra -Werror
 NAME = libft.a
 RM = rm -f
 %.o:%.c
-	gcc $(CFLAGS) -c $^ -o $@
+	cc $(CFLAGS) -c $^ -o $@
 all: $(NAME)
 
 $(NAME): $(OBJF) libft.h
@@ -25,3 +25,5 @@ fclean: clean
 	$(RM) $(NAME) 
 
 re: fclean all
+
+.PHONY: all clean fclean bonus re
